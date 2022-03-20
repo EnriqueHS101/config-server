@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  security:
+    user:
+      name: ehs
+      password: ehs123
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/EnriqueHS101/config-repository.git
+          username: ehs #usado solo con repositorio privado
+          password: ehs123  #usado solo con repositorio privado
+          search-paths: / #en caso se creen carpetas en el repositorio
+          default-label: "main" #ubicando la rama
+          
